@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
