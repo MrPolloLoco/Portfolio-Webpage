@@ -1,13 +1,90 @@
-* {
+*, ::before, ::after {
     box-sizing: border-box;
-    border: 1px solid;
 }
 
 html {
     font-size: 10px;
 }
 
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #D4E4F7;
+}
+
+.heading {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#header {
+    text-align: center;
+    background-color: #FC7307;
+    grid-column: span 3;
+}
+
 h1 {
+    font-size: 5rem;
+    color: #236AB9;
+}
+
+.author-name, .publish-date {
+    margin: 5px 0;
     font-size: 2rem;
-    color: blue;
+}
+
+.icon {
+    grid-column: -2 / -1;
+    text-align: center;
+}
+
+.fa-gear {
+    font-size: 5rem;
+}
+
+#introduction {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 1fr;
+}
+
+h2 {
+    font-size: 2.5rem;
+    grid-column: 2 / 3;
+}
+
+.speech {
+    font-size: 2rem;
+    grid-column: -3 / -2;
+}
+
+.bottom-icon {
+    text-align: center;
+    grid-column: -3 / -2;
+}
+
+.fa-robot {
+    font-size: 7rem;
+}
+
+@media only screen and (max-width: 520px) {
+    .author-name, .publish-date {
+        font-size: 1.6rem;
+    }
+
+    #introduction {
+        text-align: center;
+        grid-template-rows: 80px 1fr 100px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        grid-column: 1 / 4;
+    }
+
+    .speech {
+        grid-column: 1 / 4;
+    }
 }
