@@ -1,90 +1,130 @@
-*, ::before, ::after {
+:root {
+    --cerulean-color: #9BB7D4;
+    --french-blue: #0072B5;
+    --inkwell-color: #363945;
+    --ultimate-gray: #939597;
+    --mosaic-blue: #00758F;
+    --navy-blazer: #282D3C;
+}
+
+*, *::before, *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
+    width: 100%;
+    height: 100vh;
     font-size: 10px;
 }
 
 body {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #D4E4F7;
+    padding: 0;
+    background: var(--cerulean-color);
+    font-family: "Poppins", sans-serif;
 }
 
-.heading {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+/*The beginning of navigation bar styling.*/
+
+#navbar {
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    background: var(--french-blue);
+    top: 0;
 }
 
-#header {
-    text-align: center;
-    background-color: #FC7307;
-    grid-column: span 3;
+.nav-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-around;
+}
+
+li {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--inkwell-color);
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--cerulean-color);
+}
+
+/*The beginning of welcome section styling.*/
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--navy-blazer);
 }
 
 h1 {
     font-size: 5rem;
-    color: #236AB9;
+    color: var(--french-blue);
 }
 
-.author-name, .publish-date {
-    margin: 5px 0;
-    font-size: 2rem;
+.intro {
+    font-size: 3rem;
+    color: var(--french-blue);
+    font-style: italic;
 }
 
-.icon {
-    grid-column: -2 / -1;
-    text-align: center;
-}
+/*The beginning of about me section styling.*/
 
-.fa-gear {
-    font-size: 5rem;
-}
-
-#introduction {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 1fr 1fr;
+#about-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    text-decoration: underline;
+    color: var(--navy-blazer);
+}
+
+.grid-container { 
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#image {
+    height: 600px;
+    border-radius: 20%;
     grid-column: 2 / 3;
 }
 
-.speech {
-    font-size: 2rem;
-    grid-column: -3 / -2;
-}
-
-.bottom-icon {
+#auto-bio {
+    grid-column: 3 / 6;
+    font-size: 3rem;
+    color: var(--navy-blazer);
+    line-height: 1.5;
     text-align: center;
-    grid-column: -3 / -2;
 }
 
-.fa-robot {
-    font-size: 7rem;
-}
+/*Mobile styling for navigation bar.*/
 
 @media only screen and (max-width: 520px) {
-    .author-name, .publish-date {
-        font-size: 1.6rem;
+    #navbar {
+        justify-content: center;
     }
-
-    #introduction {
-        text-align: center;
-        grid-template-rows: 80px 1fr 100px;
-    }
-
-    h2 {
-        font-size: 2rem;
-        grid-column: 1 / 4;
-    }
-
-    .speech {
-        grid-column: 1 / 4;
+    .nav-list {
+        width: 100%;
     }
 }

@@ -6,33 +6,40 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="Portfolio-Styles.css"/>
     <script src="https://kit.fontawesome.com/af1cf3e189.js" crossorigin="anonymous"></script>
+    <meta name="Portfolio Webpage" content="Discover my personal skills and knowledge."/>
   </head>
   <body>
-    <main>
-      <section class="heading">
-        <header id="header">
-          <h1>Welcome</h1>
-        </header>
-        <div class="author">
-          <p class="author-name">By Adrian Ayon</p>
-          <p class="publish-date">May 8, 2023</p>
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li>
+            <a href="#welcome-section">Welcome</a>
+          </li>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section id="welcome-section">
+        <h1>Hi, I'm Adrian</h1>
+        <p class="intro">an engineer.</p> 
+      </section>
+      <section id="about-me">
+        <h2>About Me</h2>
+        <div class="grid-container">
+          <img id="image" src="https://live.staticflickr.com/65535/52892647607_611cc3e223_o.jpg" alt="Picture of my face."/>
+          <p id="auto-bio">
+            I like eating sea-food and drinking Thai-tea, preferably together.
+            In addition, I like skateboarding and playing the drums. However, 
+            my real passion lies in engineering. I aspire to become a full-fledged 
+            engineer and use my imagination to create things for the rest of my life.
+          </p>
         </div>
-        <div class="icon">
-          <i class="fa-solid fa-gear fa-spin" style="color: #236AB9;"></i>
-        </div>
-      </section>  
-      <article id="introduction">
-        <h2>To Friends and Family-</h2>
-        <p class="speech">
-          This website will serve as a personal portfolio, showcasing my technical skills and certifications for web 
-          development. At the moment this is a work in progress. In addition, I am only granting access to friends and
-          family for research purposes and feedback. I urge that you check back periodically to view the progress I 
-          make on this website.
-        </p>
-        <div class="bottom-icon">
-          <i class="fa-solid fa-robot fa-shake" style="color: #236AB9;"></i>
-        </div>
-      </article>
-    </main>
+      </section>
   </body>
 </html>
