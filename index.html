@@ -12,16 +12,16 @@
       <nav id="navbar">
         <ul class="nav-list">
           <li>
-            <a href="#welcome-section">Welcome</a>
+            <a id="nav-link" href="#welcome-section">Welcome</a>
           </li>
           <li>
-            <a href="#about-me">About Me</a>
+            <a id="nav-link" href="#about-me">About Me</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a id="nav-link" href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a id="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -43,9 +43,35 @@
       </section>
       <section id="projects">
         <h3>Projects</h3>
-        <div class="project-tile">
-          
+        <div class="grid">
+          <div class="project-tile">
+            <a id="tile" href="https://github.com/MrPolloLoco/Penguin.git" target="_blank">
+              <img id="penguin" src="https://everywherewild.com/wp-content/uploads/2019/09/adorable-baby-penguins.jpg" alt="picture of a penguin."/>
+              <h4>CSS Animated Penguin</h4>
+            </a>
+          </div>
+          <p class="message">
+            More projects coming soon, stay tuned!
+          </p> 
         </div>
+      </section>
+      <section id="contact">
+        <h5>Let's collaborate....</h5>
+        <p id="outro">
+          Click the social icons to reach me!
+        </p>
+        <div class="social-icons">
+          <a class="icon gmail" href="mailto:theateamdev@gmail.com" target="_blank">
+            <i class="fa-brands fa-google fa-bounce"></i><span class="m">m</span><span class="a">a</span><span class="i">i</span><span class="l">l</span>
+          </a>
+          <a class="icon discord" href="https://discord.gg/tKSHTqHk47" target="_blank">
+            <i class="fa-brands fa-discord fa-shake"></i><span class="text2">Discord</span>
+          </a>
+          <a id="profile-link" class="icon github" href="https://github.com/MrPolloLoco" target="_blank">
+            <i class="fa-brands fa-github fa-beat"></i>
+            <span class="text3">Github</span>
+          </a>
+        </div> 
       </section>
   </body>
 </html>
