@@ -325,7 +325,7 @@ h5 {
 
 /*Width for 1550px.*/
 
-@media (max-width: 1550px) {
+@media only screen and (max-width: 1550px) {
     /*Start of navbar styling.*/
     .nav-list {
         width: 100%;
@@ -349,7 +349,7 @@ h5 {
 
 /*Desktops, large screens.*/
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     /*Start of navbar styling.*/
     .nav-list {
         width: 100%;
@@ -383,7 +383,7 @@ h5 {
 
 /*Small screens, laptops.*/
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     /*Start of navbar styling.*/
     .nav-list {
         width: 100%;
@@ -433,7 +433,7 @@ h5 {
 
 /*iPads and other tablets styling.*/
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     /*Start of navbar styling.*/
     .nav-list {
         width: 100%;
@@ -484,7 +484,7 @@ h5 {
     }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     /*Start of projects styling.*/
     h4 {
         font-size: 2.5rem;
@@ -493,7 +493,7 @@ h5 {
 
 /*Mobile styling.*/
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     /*Start of navbar.*/
     #navbar {
         justify-content: center;
@@ -502,7 +502,7 @@ h5 {
         width: 100%;
     }
     .nav-items {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     /*Start of welcome section.*/
     #welcome-section {
